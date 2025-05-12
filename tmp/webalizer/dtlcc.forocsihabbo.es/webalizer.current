@@ -1,0 +1,222 @@
+# Webalizer V2.23-08 Incremental Data - 05/01/2025 20:15:46
+2025 5 1 20 15 46
+161 154 5 25 10 4 74961330 28 5 0
+5 3 146 1 1
+161 154 74961330 5 28 5
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0
+2 2 128 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+6 4 118052 2
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+4 4 106098 2
+0 0 0 0
+0 0 0 0
+146 142 74683688 22
+0 0 0 0
+0 0 0 0
+3 2 53364 2
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0
+0
+0
+154
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+6
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/prueba/img/fondo4.png
+0 3 94082269621152 8817123 0 0
+/img/fondologo.png
+0 2 94082269641216 5284212 0 0
+/prueba/script.js
+0 18 94082269644240 348678 0 0
+/.well-known/acme-challenge/BXWQC09BZHTVHAAA_Z6S74T_RT8HL8CM
+0 1 0 64 0 0
+/prueba/img/logocsi.png
+0 3 94082269643344 419721 0 0
+/styles.css
+0 3 94082269640704 119916 0 0
+/prueba/img/fondologo.png
+0 3 94082269643040 7926318 0 0
+/prueba/img/2fondo.png
+0 3 94082269621424 8456766 0 0
+/img/logocsi.png
+0 2 94082269640992 279814 0 0
+/prueba/ajax/noticias_ajax.php
+0 19 94082269640624 27569 0 0
+/img/2fondo.png
+0 2 94082269638320 5637844 0 0
+/ajax/noticias_ajax.php
+0 3 94082269638544 4473 0 0
+/ajax/eventos_ajax.php
+0 3 94082269638432 10995 0 0
+/img/fondo4.png
+0 2 94082269621824 5878082 0 0
+/prueba/styles.css
+0 18 94082269621504 535032 0 0
+/images/ico/favicon.ico
+0 9 94082269641392 58122 0 0
+/img/fondo5.png
+0 2 94082269638208 6692740 0 0
+/img/fondo3.png
+0 2 94082269621744 5205486 0 0
+/.well-known/acme-challenge/OMJR7I4SBJT77FJ9XOYZ7CH62OEBW_FG
+0 1 2 64 0 0
+/
+0 8 94082269638800 372731 4 1
+/prueba/
+0 19 94082269639216 870333 1 0
+/prueba/ajax/eventos_ajax.php
+0 19 94082269621264 69635 0 0
+/prueba/img/fondo5.png
+0 3 94082269639568 10039110 0 0
+/script.js
+0 3 94082269641104 62097 0 0
+/prueba/img/fondo3.png
+0 3 30 7808229 0 0
+# End Of Table - urls
+# -sites- (monthly)
+68.183.194.82
+0 3 2 53364 1 1746130543
+/
+64.225.70.252
+0 6 4 118052 1 1746083445
+/
+5.154.90.114
+0 146 142 74683688 1 1746122080
+/
+24.199.120.35
+0 4 4 106098 2 1746109589
+/
+sv6.byethost6.org
+0 2 2 128 0 0
+-
+# End Of Table - sites (monthly)
+# -sites- (daily)
+68.183.194.82
+0 3 2 53364 1 1746130543
+/
+64.225.70.252
+0 6 4 118052 1 1746083445
+/
+5.154.90.114
+0 146 142 74683688 1 1746122080
+/
+24.199.120.35
+0 4 4 106098 2 1746109589
+/
+sv6.byethost6.org
+0 2 2 128 0 0
+-
+# End Of Table - sites (daily)
+# -referrers- 
+https://www.forociahabbo.wuaze.com/prueba/styles.css
+0 15
+http://www.forociahabbo.wuaze.com/
+0 2
+https://forociahabbo.wuaze.com/styles.css
+0 5
+- (Direct Request)
+0 32
+https://forociahabbo.wuaze.com/
+0 11
+https://sv6.byethost6.org:2083/
+0 2
+https://www.forociahabbo.wuaze.com/index.php
+0 6
+https://www.forociahabbo.wuaze.com/
+0 2
+https://www.forociahabbo.wuaze.com/styles.css
+0 5
+https://www.forociahabbo.wuaze.com/prueba/index.php
+0 81
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+0 146
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+0 3
+Cpanel-HTTP-Client/1.0
+0 2
+Mozilla/5.0 (compatible)
+0 10
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

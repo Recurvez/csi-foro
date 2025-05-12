@@ -1,0 +1,209 @@
+        /* Scroll desactivado en el cuerpo para evitar conflictos */
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        /* Barra de navegación */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+            display: flex;
+            align-items: center; /* Centra verticalmente el contenido */
+            justify-content: center; /* Centra horizontalmente */
+            height: 8%; 
+        }
+        nav.hidden {
+            top: -8%; /* Oculta el navbar al moverlo fuera de la pantalla */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center; /* Centra verticalmente los elementos dentro de la lista */
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+            display: flex;
+            align-items: center; /* Asegura que el texto de los enlaces esté centrado */
+            height: 100%; /* Asegura que ocupe todo el alto del navbar */
+        }
+
+        /* Resaltar enlace activo */
+        nav ul li a.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Secciones */
+        .section {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            transition: background 0.3s ease-in-out;
+            flex-shrink: 0;
+            color: white; /* Texto blanco por defecto */
+        }
+
+        .event-info {
+            background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 600px;
+            color: white;
+            font-size: 20px;
+            line-height: 1.5;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .scroll-arrow {
+            position: absolute;
+            bottom: 30px;
+            right: 90px;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            animation: bounce 1.5s infinite ease-in-out;
+        }
+
+        .scroll-arrow img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Animación de flotación */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .warning-button {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .warning-button span {
+            font-size: 30px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .warning-message {
+            position: absolute;
+            top: 10%;
+            left: 80%;
+            transform: translateX(-50%);
+            background: rgba(28, 28, 28, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            display: none;
+            z-index: 1001;
+        }
+
+        .letter-container {
+            background: url('https://www.transparenttextures.com/patterns/aged-paper.png'); /* Textura de papel antiguo */
+            background-color: #f5deb3; /* Color marrón-amarillo */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 600px;
+            width: 80%;
+            font-family: 'Courier New', cursive;
+            color: #5a3e1b;
+            border: 3px solid #8b5a2b;
+        }
+
+        .letter-container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 90%;
+            height: 200px;
+            border: 2px solid #8b5a2b;
+            border-radius: 10px;
+            padding: 10px;
+            font-family: 'Courier New', cursive;
+            font-size: 18px;
+            background: rgba(255, 248, 220, 0.9); /* Fondo tipo pergamino */
+            resize: none;
+            outline: none;
+            color: #5a3e1b;
+        }
+
+        button {
+            background: #8b5a2b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #5a3e1b;
+        }
+
+        /* Fondos con imágenes */
+        #section1 { background: url('https://i.imgur.com/foKlKFQ.jpeg') center / cover no-repeat; }
+        #section2 { background: url('https://act-webstatic.hoyoverse.com/puzzle/hk4e/pz_mDZ7Xhhdj3/resource/hippo/2803/a6d67b3f7d32d847bf73a1dcc0a44496_2599.png') center / cover no-repeat; }

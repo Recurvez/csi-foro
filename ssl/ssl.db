@@ -1,0 +1,131 @@
+--- 
+files: 
+  certificate: 
+    forocsihabbo_es_dabd1_923dd_1777454829_228db042cfebe4f66427554799c4ac0d: 
+      created: '1745918829'
+      domains: 
+        - forocsihabbo.es
+        - mail.forocsihabbo.es
+        - www.forocsihabbo.es
+        - cpanel.forocsihabbo.es
+        - webmail.forocsihabbo.es
+        - webdisk.forocsihabbo.es
+        - cpcontacts.forocsihabbo.es
+        - cpcalendars.forocsihabbo.es
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Cert for “forocsihabbo.es”
+      id: forocsihabbo_es_dabd1_923dd_1777454829_228db042cfebe4f66427554799c4ac0d
+      is_self_signed: 1
+      issuer.commonName: forocsihabbo.es
+      issuer.organizationName: ~
+      key_algorithm: rsaEncryption
+      modulus: dabd1f1ebb0780f45ff1e77bc29f09857718bbea942438885c411540227eaeebed0f7e59008cfd1a0dceed6020f1a7273a2a4ef610d3c4cbd3c1c42bc102911e67a68ea8f15cce87a974dd26face9920e514c108b51ccebc33c1c877775e7f68b45d5abf96823f1641ca635930a1071d6aeffd17db1d4a3a11f6cb0c00183fdaad8df9c7b1c2541b2b63072f35e30f4abc82f76d531fa5c1736d51c844c4644a84132c4bfaf59620fa9cf933a3ed7f02423d9eabea93c18962ce94dd3d92038a68f7f430dac58f7a4a7b9ff2c6197fcee2c752fef0894ba98fe420943a76ee8480a68bafc43644b46304d67bf5e3d36fc0a89f63aebd9a3bf5c96c91c0d923dd
+      modulus_length: 2048
+      not_after: '1777454829'
+      not_before: '1745918829'
+      serial: '0129414e51'
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: forocsihabbo.es
+      validation_type: ~
+    www_forociahabbo_wuaze_com_b0d9c_bea1d_1753691326_9237073e3e5923e2116c6058caa4578a: 
+      created: '1745918837'
+      domains: 
+        - forociahabbo.wuaze.com
+        - www.forociahabbo.wuaze.com
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Cert for “dtlcc.forocsihabbo.es”
+      id: www_forociahabbo_wuaze_com_b0d9c_bea1d_1753691326_9237073e3e5923e2116c6058caa4578a
+      is_self_signed: 0
+      issuer.commonName: R10
+      issuer.organizationName: Let's Encrypt
+      key_algorithm: rsaEncryption
+      modulus: b0d9c9b9d6b5c256aa9d77b875c9d18e31543384af970047373a8117875e7cec69056de0392325a76bde1a2ea870252920d3170f86597ad40708594e92303e2a2f819f4df2429cef69d9449981bff94e62c6bdd381e4e6eb35032d570b8621f6766b84cd60776a28ed32b9ab68419a1b0bd702158ee037879886a4beeb2f46313edcbc07d239e9970a9fb1f8fc3460e0c25cd17e88b8f6cc686bb7e555ee38e197cf974f52f07948bd9a87da0a20f421d3bf94aa0d4f3f6df10728656a620ba35bf2ea5e07220aaf0c69a35b98ec4d5d9c83eb647dbd67857824f9461208061d75dcf87474b353a8ab615f878b4b1333e13a72d9e0294fe183f7686bc7cbea1d
+      modulus_length: 2048
+      not_after: '1753691326'
+      not_before: '1745915327'
+      serial: 05c828a50eca70ed80b7878ca9c2f81fc4a1
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: www.forociahabbo.wuaze.com
+      validation_type: dv
+    www_forocsihabbo_es_ccc0a_06863_1753691325_662c47f4246426efa335250dbb973a06: 
+      created: '1745918835'
+      domains: 
+        - forocsihabbo.es
+        - www.forocsihabbo.es
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Cert for “forocsihabbo.es” 1745918835.0
+      id: www_forocsihabbo_es_ccc0a_06863_1753691325_662c47f4246426efa335250dbb973a06
+      is_self_signed: 0
+      issuer.commonName: R11
+      issuer.organizationName: Let's Encrypt
+      key_algorithm: rsaEncryption
+      modulus: ccc0ab2729f862da5191c03f935eb345201a8aa7d456dcfcbfe3a2f721d579e5e0546dee9e0115cf045b1e3a95b3895b158f41f2ad47e9b1c9459f627f97026390574265e48438f0c559df20a0be53923a5b69b293fadd02c220bd065ecaf6cdb19c0c1aecca688902973339f28d76e05c99cb24ec780c445baa0b7dc3bb96d5f188d39f571c47b808933c73feee5d75e19ddbdb5ef07e57538ee46bddf357c87564d9c49532aef74aba45e3511a660e43ba482721142e34344611026d7bb21aa36477f3598550d037dafc0a072a7637f7dc85e75b3c552627447af0b2a4b40cf96f578f7a7bedb1f5d9b29f983f639878e4dab5ba5228df9d8f2e2a96b06863
+      modulus_length: 2048
+      not_after: '1753691325'
+      not_before: '1745915326'
+      serial: 05b38b2ecef011fb84e06e53f8c6c490b798
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: www.forocsihabbo.es
+      validation_type: dv
+  key: 
+    b0d9c_bea1d_550ca4f5acf7c66eb066201096d60e52: 
+      created: '1745918837'
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Key for “dtlcc.forocsihabbo.es”
+      id: b0d9c_bea1d_550ca4f5acf7c66eb066201096d60e52
+      key_algorithm: rsaEncryption
+      modulus: b0d9c9b9d6b5c256aa9d77b875c9d18e31543384af970047373a8117875e7cec69056de0392325a76bde1a2ea870252920d3170f86597ad40708594e92303e2a2f819f4df2429cef69d9449981bff94e62c6bdd381e4e6eb35032d570b8621f6766b84cd60776a28ed32b9ab68419a1b0bd702158ee037879886a4beeb2f46313edcbc07d239e9970a9fb1f8fc3460e0c25cd17e88b8f6cc686bb7e555ee38e197cf974f52f07948bd9a87da0a20f421d3bf94aa0d4f3f6df10728656a620ba35bf2ea5e07220aaf0c69a35b98ec4d5d9c83eb647dbd67857824f9461208061d75dcf87474b353a8ab615f878b4b1333e13a72d9e0294fe183f7686bc7cbea1d
+      modulus_length: 2048
+    ccc0a_06863_cdb87c91508717123d35ce592caa29c9: 
+      created: '1745918835'
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Key for “forocsihabbo.es” 1745918835.0
+      id: ccc0a_06863_cdb87c91508717123d35ce592caa29c9
+      key_algorithm: rsaEncryption
+      modulus: ccc0ab2729f862da5191c03f935eb345201a8aa7d456dcfcbfe3a2f721d579e5e0546dee9e0115cf045b1e3a95b3895b158f41f2ad47e9b1c9459f627f97026390574265e48438f0c559df20a0be53923a5b69b293fadd02c220bd065ecaf6cdb19c0c1aecca688902973339f28d76e05c99cb24ec780c445baa0b7dc3bb96d5f188d39f571c47b808933c73feee5d75e19ddbdb5ef07e57538ee46bddf357c87564d9c49532aef74aba45e3511a660e43ba482721142e34344611026d7bb21aa36477f3598550d037dafc0a072a7637f7dc85e75b3c552627447af0b2a4b40cf96f578f7a7bedb1f5d9b29f983f639878e4dab5ba5228df9d8f2e2a96b06863
+      modulus_length: 2048
+    dabd1_923dd_5471c50cad3d367f65dabc2e1880e56f: 
+      created: '1745918829'
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Key for “forocsihabbo.es”
+      id: dabd1_923dd_5471c50cad3d367f65dabc2e1880e56f
+      key_algorithm: rsaEncryption
+      modulus: dabd1f1ebb0780f45ff1e77bc29f09857718bbea942438885c411540227eaeebed0f7e59008cfd1a0dceed6020f1a7273a2a4ef610d3c4cbd3c1c42bc102911e67a68ea8f15cce87a974dd26face9920e514c108b51ccebc33c1c877775e7f68b45d5abf96823f1641ca635930a1071d6aeffd17db1d4a3a11f6cb0c00183fdaad8df9c7b1c2541b2b63072f35e30f4abc82f76d531fa5c1736d51c844c4644a84132c4bfaf59620fa9cf933a3ed7f02423d9eabea93c18962ce94dd3d92038a68f7f430dac58f7a4a7b9ff2c6197fcee2c752fef0894ba98fe420943a76ee8480a68bafc43644b46304d67bf5e3d36fc0a89f63aebd9a3bf5c96c91c0d923dd
+      modulus_length: 2048
+indexes: 
+  certificate: 
+    modulus: 
+      b0d9c9b9d6b5c256aa9d77b875c9d18e31543384af970047373a8117875e7cec69056de0392325a76bde1a2ea870252920d3170f86597ad40708594e92303e2a2f819f4df2429cef69d9449981bff94e62c6bdd381e4e6eb35032d570b8621f6766b84cd60776a28ed32b9ab68419a1b0bd702158ee037879886a4beeb2f46313edcbc07d239e9970a9fb1f8fc3460e0c25cd17e88b8f6cc686bb7e555ee38e197cf974f52f07948bd9a87da0a20f421d3bf94aa0d4f3f6df10728656a620ba35bf2ea5e07220aaf0c69a35b98ec4d5d9c83eb647dbd67857824f9461208061d75dcf87474b353a8ab615f878b4b1333e13a72d9e0294fe183f7686bc7cbea1d: 
+        www_forociahabbo_wuaze_com_b0d9c_bea1d_1753691326_9237073e3e5923e2116c6058caa4578a: ~
+      ccc0ab2729f862da5191c03f935eb345201a8aa7d456dcfcbfe3a2f721d579e5e0546dee9e0115cf045b1e3a95b3895b158f41f2ad47e9b1c9459f627f97026390574265e48438f0c559df20a0be53923a5b69b293fadd02c220bd065ecaf6cdb19c0c1aecca688902973339f28d76e05c99cb24ec780c445baa0b7dc3bb96d5f188d39f571c47b808933c73feee5d75e19ddbdb5ef07e57538ee46bddf357c87564d9c49532aef74aba45e3511a660e43ba482721142e34344611026d7bb21aa36477f3598550d037dafc0a072a7637f7dc85e75b3c552627447af0b2a4b40cf96f578f7a7bedb1f5d9b29f983f639878e4dab5ba5228df9d8f2e2a96b06863: 
+        www_forocsihabbo_es_ccc0a_06863_1753691325_662c47f4246426efa335250dbb973a06: ~
+      dabd1f1ebb0780f45ff1e77bc29f09857718bbea942438885c411540227eaeebed0f7e59008cfd1a0dceed6020f1a7273a2a4ef610d3c4cbd3c1c42bc102911e67a68ea8f15cce87a974dd26face9920e514c108b51ccebc33c1c877775e7f68b45d5abf96823f1641ca635930a1071d6aeffd17db1d4a3a11f6cb0c00183fdaad8df9c7b1c2541b2b63072f35e30f4abc82f76d531fa5c1736d51c844c4644a84132c4bfaf59620fa9cf933a3ed7f02423d9eabea93c18962ce94dd3d92038a68f7f430dac58f7a4a7b9ff2c6197fcee2c752fef0894ba98fe420943a76ee8480a68bafc43644b46304d67bf5e3d36fc0a89f63aebd9a3bf5c96c91c0d923dd: 
+        forocsihabbo_es_dabd1_923dd_1777454829_228db042cfebe4f66427554799c4ac0d: ~
+    subject.commonName: 
+      forocsihabbo.es: 
+        forocsihabbo_es_dabd1_923dd_1777454829_228db042cfebe4f66427554799c4ac0d: ~
+      www.forociahabbo.wuaze.com: 
+        www_forociahabbo_wuaze_com_b0d9c_bea1d_1753691326_9237073e3e5923e2116c6058caa4578a: ~
+      www.forocsihabbo.es: 
+        www_forocsihabbo_es_ccc0a_06863_1753691325_662c47f4246426efa335250dbb973a06: ~
+uniques: 
+  certificate: 
+    friendly_name: 
+      Cert for “dtlcc.forocsihabbo.es”: www_forociahabbo_wuaze_com_b0d9c_bea1d_1753691326_9237073e3e5923e2116c6058caa4578a
+      Cert for “forocsihabbo.es”: forocsihabbo_es_dabd1_923dd_1777454829_228db042cfebe4f66427554799c4ac0d
+      Cert for “forocsihabbo.es” 1745918835.0: www_forocsihabbo_es_ccc0a_06863_1753691325_662c47f4246426efa335250dbb973a06
+  key: 
+    friendly_name: 
+      Key for “dtlcc.forocsihabbo.es”: b0d9c_bea1d_550ca4f5acf7c66eb066201096d60e52
+      Key for “forocsihabbo.es”: dabd1_923dd_5471c50cad3d367f65dabc2e1880e56f
+      Key for “forocsihabbo.es” 1745918835.0: ccc0a_06863_cdb87c91508717123d35ce592caa29c9
+    modulus:ecdsa_curve_name:ecdsa_public: 
+      b0d9c9b9d6b5c256aa9d77b875c9d18e31543384af970047373a8117875e7cec69056de0392325a76bde1a2ea870252920d3170f86597ad40708594e92303e2a2f819f4df2429cef69d9449981bff94e62c6bdd381e4e6eb35032d570b8621f6766b84cd60776a28ed32b9ab68419a1b0bd702158ee037879886a4beeb2f46313edcbc07d239e9970a9fb1f8fc3460e0c25cd17e88b8f6cc686bb7e555ee38e197cf974f52f07948bd9a87da0a20f421d3bf94aa0d4f3f6df10728656a620ba35bf2ea5e07220aaf0c69a35b98ec4d5d9c83eb647dbd67857824f9461208061d75dcf87474b353a8ab615f878b4b1333e13a72d9e0294fe183f7686bc7cbea1d: b0d9c_bea1d_550ca4f5acf7c66eb066201096d60e52
+      ccc0ab2729f862da5191c03f935eb345201a8aa7d456dcfcbfe3a2f721d579e5e0546dee9e0115cf045b1e3a95b3895b158f41f2ad47e9b1c9459f627f97026390574265e48438f0c559df20a0be53923a5b69b293fadd02c220bd065ecaf6cdb19c0c1aecca688902973339f28d76e05c99cb24ec780c445baa0b7dc3bb96d5f188d39f571c47b808933c73feee5d75e19ddbdb5ef07e57538ee46bddf357c87564d9c49532aef74aba45e3511a660e43ba482721142e34344611026d7bb21aa36477f3598550d037dafc0a072a7637f7dc85e75b3c552627447af0b2a4b40cf96f578f7a7bedb1f5d9b29f983f639878e4dab5ba5228df9d8f2e2a96b06863: ccc0a_06863_cdb87c91508717123d35ce592caa29c9
+      dabd1f1ebb0780f45ff1e77bc29f09857718bbea942438885c411540227eaeebed0f7e59008cfd1a0dceed6020f1a7273a2a4ef610d3c4cbd3c1c42bc102911e67a68ea8f15cce87a974dd26face9920e514c108b51ccebc33c1c877775e7f68b45d5abf96823f1641ca635930a1071d6aeffd17db1d4a3a11f6cb0c00183fdaad8df9c7b1c2541b2b63072f35e30f4abc82f76d531fa5c1736d51c844c4644a84132c4bfaf59620fa9cf933a3ed7f02423d9eabea93c18962ce94dd3d92038a68f7f430dac58f7a4a7b9ff2c6197fcee2c752fef0894ba98fe420943a76ee8480a68bafc43644b46304d67bf5e3d36fc0a89f63aebd9a3bf5c96c91c0d923dd: dabd1_923dd_5471c50cad3d367f65dabc2e1880e56f

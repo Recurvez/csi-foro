@@ -1,0 +1,1361 @@
+/* ESTILOS GENERALES */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Evita el desbordamiento horizontal */
+    scroll-behavior: auto;
+    height: 100%; /* Asegura que ocupen el 100% de la altura */
+    width: 100%; /* Asegura que ocupen el 100% del ancho */
+}
+
+body::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color de fondo de la barra */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del pulgar */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color del pulgar al pasar el mouse */
+}
+
+/* Secciones */
+.section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; /* Escalable sin depender del zoom */
+    transition: background 0.3s ease-in-out;
+    color: white;
+    text-align: center;
+    box-sizing: border-box; /* Incluye el padding y border en el tamaño total */
+}
+
+#inicio {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.3)), 
+                url('img/fondologo.png') center/cover no-repeat;
+}
+
+#equipo {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.3)), 
+                url('img/2fondo.png') center/cover no-repeat;
+}
+
+#rangos {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.3)), 
+                url('img/fondo5.png') center/cover no-repeat;
+}
+
+#noticias {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.3)), 
+                url('img/fondo4.png') center/cover no-repeat;
+}
+
+#eventos {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.3)), 
+                url('img/fondo3.png') center/cover no-repeat;
+}
+
+#footer{
+    background-color: #000000;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0; /* Añadido padding para mejor espaciado */
+    z-index: 100; /* Asegura que esté encima de otros elementos */
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacia logo y enlaces */
+    width: 90%; /* Reduce el ancho para márgenes laterales */
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Lista de enlaces */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    padding: 10px 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+/* Hover */
+.nav-links li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Menú móvil */
+.menu-toggle {
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 60px; /* Ajusta según la altura de tu nav */
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+.scroll-arrow {
+    position: relative; /* Ya no es absoluta, es relativa al contenedor */
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    animation: bounce 1.5s infinite ease-in-out;
+    bottom: 10%;
+}
+
+.scroll-arrow img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Animación */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/*------------------------------------------------------------------------*/  
+/* ESTILOS PARA LA SECCIÓN DE INICIO */  
+/*------------------------------------------------------------------------*/  
+
+/* CONTENEDOR PRINCIPAL */  
+.inicio-container {  
+    display: grid;  
+    grid-template-columns: 1fr 1fr; /* Dos columnas */  
+    grid-template-rows: auto;  
+    grid-gap: 20px;  
+    padding: 20px;  
+    width: 90%;  
+    margin: auto;  
+    margin-top: 5%;  
+    margin-bottom: 5%;  
+    justify-content: center;  
+    align-items: start;  
+    position: relative; /* Para posicionar la flecha absolutamente */  
+}  
+
+.grid-item {  
+    display: flex;  
+    flex-direction: column;  
+    gap: 20px;  
+}  
+
+/* 🎵 Estilos del Reproductor */  
+.radio-container {  
+    background: rgba(255, 255, 255, 0.1);  
+    backdrop-filter: blur(10px);  
+    padding: 15px;  
+    border-radius: 15px;  
+    text-align: center;  
+    width: 30%;   
+    margin: auto;  
+    transition: transform 0.3s ease-in-out;  
+    height:auto;
+    overflow: hidden;
+    margin-top: 8%;
+}  
+
+.radio-container:hover {  
+    transform: scale(1.05);  
+}  
+
+.radio-title {
+    font-size: 0.83em;
+    color: white;
+    margin: 5px 0;
+}
+
+/* 🎶 Portada del Álbum */  
+.cover-album {  
+    width: 120px;  
+    height: 120px;  
+    border-radius: 15px;  
+    overflow: hidden;  
+    margin: 10px auto;  
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);  
+}  
+
+.cover-album img {  
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+}  
+
+/* 🎚 Controles del Reproductor */  
+.radio-controls {  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    gap: 10px;  
+    flex-wrap: wrap;  
+}  
+
+/* 🔘 Botón de Play/Pause */  
+.radio-btn {  
+    background: #00c9ff;  
+    border: none;  
+    color: white;  
+    font-size: 18px;  
+    width: 45px;  
+    height: 45px;  
+    border-radius: 50%;  
+    cursor: pointer;  
+    transition: background 0.3s ease-in-out, transform 0.2s;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);  
+}  
+
+.radio-btn:hover {  
+    background: #009cd1;  
+    transform: scale(1.1);  
+}  
+
+/* 🎛 Control de Volumen */  
+#volumeControl {  
+    -webkit-appearance: none;  
+    appearance: none;  
+    width: 100px;  
+    height: 5px;  
+    background: linear-gradient(to right, #00c9ff, #009cd1);  
+    border-radius: 5px;  
+    outline: none;  
+    cursor: pointer;  
+    transition: 0.3s;  
+}  
+
+#volumeControl:hover {  
+    height: 8px;  
+}  
+
+/* 🎤 Información de la Canción */  
+.radio-info p {  
+    font-size: 14px;  
+    color: white;  
+    margin: 5px 0;  
+    transition: opacity 0.3s ease-in-out;  
+}  
+
+/* 📌 TRABAJADOR SEMANAL */  
+.trabajador-semanal {  
+    background: rgba(255, 255, 255, 0.1);  
+    backdrop-filter: blur(10px);  
+    border-radius: 15px;  
+    text-align: center;  
+    width: auto;  
+    height: auto;  
+    margin: auto;  
+    transition: transform 0.3s ease-in-out;
+}  
+
+.trabajador-semanal-titulo {  
+    font-size: 0.83em;
+    color: white;
+    margin: 10%;
+}  
+
+.trabajador-info {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    justify-content: center;  
+    margin: 5px 0;  
+}  
+
+.trabajador-semanal img {  
+    width: 64px;  
+    height: 110px;  
+    margin-bottom: 5px;  
+}  
+
+.trabajador-semanal-user {  
+    font-size: 0.83rem;  
+    color: white;  
+    font-weight: bold;  
+    margin: 5px 0;  
+}  
+
+.trabajador-semanal-motto {  
+    font-size: 0.83rem;  
+    color: white;  
+    margin: 5px 0;  
+}  
+
+.trabajador-semanal:hover {  
+    transform: scale(1.05);  
+}  
+
+/* 📊 TOP 10 ASCENSOS */  
+.top-ascensos {  
+    background: rgba(255, 255, 255, 0.1);  
+    backdrop-filter: blur(10px);  
+    border-radius: 15px;  
+    text-align: center;  
+    padding: 15px;  
+    width: auto;    
+    margin: auto;
+    margin-left: 30%;  
+    overflow: hidden;  
+    transition: transform 0.3s ease-in-out;  
+}  
+
+.top-ascensos:hover {  
+    transform: scale(1.05);  
+}  
+
+.top-ascensos table {  
+    width: 100%;  
+    border-collapse: collapse;  
+}  
+
+.top-ascensos th, .top-ascensos td {  
+    padding: 5px;  
+}  
+
+/* 📱 MEDIA QUERIES PARA RESPONSIVE */  
+@media (max-width: 768px) {  
+    .inicio-container {  
+        transform: scale(0.5);
+        right: 24%;
+    }
+    .radio-container {  
+        height: auto;
+        width: auto;
+    }  
+}  
+
+@media (max-width: 480px) {  
+    .cover-album {  
+        width: 100px;  
+        height: 100px;  
+    }  
+    .trabajador-semanal img {  
+        width: 50px;  
+    }  
+}  
+
+
+/*------------------------------------------------------------------------*/
+/* ESTILOS PARA EL EQUIPO */
+/*------------------------------------------------------------------------*/
+
+/* Contenedor del equipo */
+.equipo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Asegura alineación en la parte superior */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 1200px; 
+    margin: 0 auto;
+}
+
+/* Contenedor de miembros */
+.miembros-section {
+    width: 70%;
+    height: 0px;
+    text-align: center;
+    min-height: 600px; /* Aumenta la altura mínima */
+    max-height: 1500px; /* Aumenta la altura máxima */
+    overflow: hidden;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: relative; /* Necesario para que position: sticky funcione */
+}
+.placa-titulo-container {
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Altura fija para evitar movimientos */
+    transform: scale(0.80); /* Escala el contenedor a la mitad de su tamaño */
+    min-width: 600px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+/* Placa del rango seleccionado */
+#placa-imagen {
+    width: 80px;
+    margin-right: -25px;
+    margin-top: 25px;
+    filter: drop-shadow(0px 0px 5px black);
+    position: sticky;
+    top: 0px; /* Ajusta según sea necesario */
+}
+
+/* Titulo del rango seleccionado */
+#titulo-rango {
+    font-size: 24px;
+    margin-left: 25px;
+    margin-top: 0px;
+    position: sticky;
+}
+
+/* Contenedor de la lista de miembros */
+#miembros-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: start; /* Alinea los elementos en la parte superior */
+    overflow-y: hidden; /* Oculta el scroll vertical */
+    max-height: 600px; /* Límite para evitar movimientos del diseño */
+    width: 100%;
+    margin-top: 30px;
+    background-size: 100%; /* Reduce el tamaño del tablero */
+    background-position: center; /* Centra la imagen del tablero */
+    position: relative; /* Necesario para que los elementos hijos se posicionen correctamente */
+}
+
+.carrusel-controles {
+    z-index: 0; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Estilos de cada miembro */
+.miembro {
+    margin: 0px;
+    text-align: center;
+    width: 100px; /* Tamaño fijo */
+    margin-top: 160px;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    transform: scale(0.85);
+}
+
+.miembro:hover {
+    transform: scale(0.95);
+}
+
+.userperfileindex {
+    border: none;
+}
+
+.userperfileindex img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nameuserperfil {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.miembro img {
+    width: 80px;
+    height: 160px;
+    filter: drop-shadow(-5px 0px 0px rgba(0, 0, 0, 0.3));
+}
+
+/* Botones de rangos */
+.rank-buttons {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 20px rgb(89, 89, 89);
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra verticalmente los elementos */
+    width: 100px;
+    padding-bottom: 30px;
+    margin-left: 25%;
+    margin-top: 4%
+}
+
+/* Botón solo con la imagen de la placa */
+.rank-btn {
+    width: 70px;
+    height: 70px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: black 0px 0px 5px;
+    padding: 5px;
+    margin-top: 30px;
+    border-radius: 50%;
+    transition: transform ease-in-out;
+}
+
+/* Colores de fondo según el rango */
+.founder {
+    background-color: red;
+}
+
+.manager {
+    background-color: rgb(255, 52, 86);
+}
+
+.admin {
+    background-color: yellow;
+}
+
+.junta-directiva {
+    background-color: orange;
+}
+
+.rank-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Efecto de hover en los botones */
+.rank-btn:hover {
+    transform: scale(1.1);
+}
+
+.rank-btn.active {
+    transform: scale(1.3);
+}
+
+/* 📱 MEDIA QUERIES PARA RESPONSIVE */  
+@media (max-width: 768px) {  
+    #equipo2 {
+        transform: scale(0.5);
+    }
+    
+    #equipo2 h1 {
+        font-size: 54.7px;
+    }
+
+    .equipo-container{
+        margin-left: -8%;
+    }
+
+    .rank-buttons{
+        margin-right:0%;
+    }
+    
+}  
+
+@media (max-width: 480px) {  
+   
+} 
+
+/*------------------------------------------------------------------------*/
+/* ESTILOS PARA LA SECCIÓN DE RANGOS */
+/*------------------------------------------------------------------------*/
+
+/* Contenedor con tamaño fijo */
+#rangos2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.misiones-contenedor {
+    width: 80%;
+    max-width: 600px;
+    height: 60vh; /* Altura máxima */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-y: auto; /* Añade scroll vertical */
+}
+
+.ranks-btn {
+    background-color: rgba(0, 0, 0, 0.2); /* Negro con 20% de opacidad */
+    color: white; /* Color de texto */
+    font-size: 16px; /* Tamaño de fuente */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Eliminar bordes */
+    border-radius: 50%; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2); /* Sombra */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.ranks-btn img{
+    margin-top: 10px;
+}
+
+.ranks-btn:hover {
+    background-color: rgb(255, 255, 255, 0.5); /* Color de fondo al pasar el mouse */
+}
+
+/* Tablas de misiones */
+.tabla-misiones {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(0.95); /* Pequeño efecto de zoom */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 0;
+    display: none; /* Ocultas por defecto */
+}
+
+.misiones-contenedor::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra */
+}
+
+.misiones-contenedor::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color de fondo de la barra */
+}
+
+.misiones-contenedor::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del pulgar */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.misiones-contenedor::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color del pulgar al pasar el mouse */
+}
+
+/* Cuando se activan */
+.tabla-misiones.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 0;
+    display: table; /* Asegura visibilidad */
+}
+
+/* Estilos de tabla */
+.tabla-misiones th, .tabla-misiones td {
+    border: 1px solid white;
+    padding: 5px;
+    text-align: left;
+}
+
+.misiones-contenedor::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra */
+}
+
+.misiones-contenedor::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color de fondo de la barra */
+}
+
+.misiones-contenedor::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del pulgar */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.misiones-contenedor::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color del pulgar al pasar el mouse */
+}
+
+#carousel-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.btn-carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.btn-carousel:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-carousel-prev {
+    left: 10px;
+}
+
+.btn-carousel-next {
+    right: 10px;
+}
+
+/* 📱 MEDIA QUERIES PARA RESPONSIVE */  
+@media (max-width: 768px) {  
+    #rangos2 {
+        transform: scale(0.5);
+    }
+    
+    #rangos2 h1 {
+        font-size: 54.7px;
+    }
+
+    .misiones-contenedor{
+        width: 1000%;
+    }
+
+    .misiones-botones{
+        transform: scale(0.75);
+    }
+}  
+
+@media (max-width: 480px) {  
+   
+} 
+
+/*------------------------------------------------------------------------*/
+/* ESTILOS NOTICIAS/*
+/*------------------------------------------------------------------------*/
+
+/* Estilos generales */
+#noticias {
+    padding: 40px;
+    background-color: #f8f8f8; /* Color de fondo */
+}
+
+#noticias h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #ffffff; /* Color del título */
+}
+
+#noticias h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #ffffff; /* Color del título */
+}
+
+.noticias-contenedor {
+    display: flex; /* Activa Flexbox */
+    flex-wrap: wrap; /* Permite que las noticias se ajusten a varias líneas */
+    justify-content: space-between; /* Distribuye las noticias equitativamente */
+}
+
+/* Estilos de tarjeta de noticia */
+.noticia-card {
+    width: 366px; /* Ancho fijo */
+    height: 500px; /* Alto fijo */
+    background-color: rgb(22, 22, 22);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.2s ease; /* Transición al pasar el mouse */
+    margin: 30px; /* Elimina el margen por defecto */
+}
+
+.noticia-card:hover {
+    transform: translateY(-5px); /* Elevación al pasar el mouse */
+}
+
+.noticia-card img {
+    width: 366px;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Ajustar imagen al contenedor */
+}
+
+.noticia-contenido {
+    padding: 20px;
+}
+
+.noticia-contenido h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.noticia-resumen {
+    font-size: 16px;
+    color: rgb(22, 22, 22);
+    margin-bottom: 15px;
+}
+
+.noticia-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.noticia-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color del enlace */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+}
+
+.noticia-link:hover {
+    background-color: #0056b3; /* Color del enlace al pasar el mouse */
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.modal-contenido {
+    background: rgb(22, 22, 22);;
+    width: 40%;
+    max-height: 75%;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal img {
+    width: 100%;
+    max-height: 1545;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal p {
+    font-size: 18px;
+    color: black;
+    margin-top: 15px;
+}
+
+.acciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.acciones button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btnMeGusta {
+    background: green;
+    color: white;
+}
+
+#btnNoMeGusta {
+    background: red;
+    color: white;
+}
+
+.cerrar-modal {
+    position: fixed;
+    top: 12%;
+    right: 31%;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(213, 0, 0);
+    box-shadow: 0px 0px 20px rgb(89, 89, 89);
+    border-radius: 1px;
+}
+
+/* Estilos para la paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#pageNumber {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 0 10px;
+}
+
+/* 📱 MEDIA QUERIES PARA RESPONSIVE */  
+@media (max-width: 768px) {  
+    #noticias2 {
+        transform: scale(0.5);
+    }
+    
+    #noticias2 h1 {
+        font-size: 54.7px;
+    }
+}  
+
+@media (max-width: 480px) {  
+    .noticia-card img {  
+        width: 100%;  
+        height: 150px;  
+    }  
+   
+}  
+
+/*------------------------------------------------------------------------*/
+/* ESTILOS EVENTOS */
+/*------------------------------------------------------------------------*/
+
+.eventos-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Ajuste del tamaño mínimo */
+    gap: 20px;  
+    margin-top: 20px;
+}
+
+.evento-card {
+    display: flex;
+    align-items: center; /* Centrar contenido verticalmente */
+    justify-content: space-between;
+    background: linear-gradient(135deg, #000000, #393939);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.evento-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.evento-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.evento-info h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.evento-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.evento-fecha {
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.evento-imagen {
+    flex: 0 0 300px; /* Define un tamaño fijo para la imagen */
+    height: 100%;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.evento-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pagination-eventos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination-eventos button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-eventos button:hover {
+    background-color: #757575;
+}
+
+.pagination-eventos button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #000000;
+}
+
+/* 📱 MEDIA QUERIES PARA RESPONSIVE */  
+@media (max-width: 768px) {  
+    #eventos2 {
+        transform: scale(0.5);
+    }
+    
+    #eventos2 h1 {
+        font-size: 54.7px;
+    }
+}  
+
+@media (max-width: 480px) {  
+
+     
+   
+} 
+
+/*------------------------------------------------------------------------*/
+/* ESTILOS FOOTER */
+/*------------------------------------------------------------------------*/
+
+.section#footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    height: 60.04% !important; /* El footer ocupará solo el 75% de la altura de la pantalla */
+    width: 100%; /* Que ocupe todo el ancho */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+  } 
+  
+  .footer-container {
+    max-width: 900px;
+    padding: 20px;
+  }
+
+  .section#footer h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-logo img {
+    height: 100px;
+    width: auto;
+  }
+  
+  .footer-text {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #bbb;
+  }
+  
+  .footer-social {
+    margin: 15px 0;
+  }
+  
+  .social-icon {
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+    color: #bbb;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    color: #fff;
+  }
+  
+  .footer-copy {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #666;
+  }
+  .footer-copy a {
+    color: #551A8B;
+    font-weight: bold;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+/*------------------------------------------------------------------------*/
+/* ESTILOS POPUP LOGIN */
+/*------------------------------------------------------------------------*/
+
+
+.popup-container {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+/*------------------------------------------------------------------------*/
+/* ESTILOS LOGIN */
+/*------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+
+.message,
+.form,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 700px;
+  height: 400px;
+  background: white;
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-shadow: 2px 2px 10px 0 rgba(51, 51, 51, 0.2);
+}
+
+.message {
+  position: absolute;
+  background: white;
+  width: 50%;
+  height: 100%;
+  transition: 0.5s all ease;
+  transform: translateX(100%);
+  z-index: 4;
+}
+
+.message::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 70%;
+  background: #c3c3d8;
+  opacity: 0;
+  left: 0;
+  top: 15%;
+}
+
+.message.signup::before {
+  opacity: 0.3;
+  left: 0;
+}
+
+.message.login::before {
+  opacity: 0.3;
+  left: 100%;
+}
+
+.btn-wrapper {
+  width: 60%;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+}
+
+.form--heading {
+  font-size: 25px;
+  height: 50px;
+  color: #129D72;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.form--signup {
+  border-right: 1px solid #999;
+}
+
+form {
+  width: 70%;
+}
+
+form > * {
+  margin: 10px;
+}
+
+form input {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #aaa;
+  font-size: 13px;
+  font-weight: 300;
+  color: #797a9e;
+  letter-spacing: 0.11em;
+}
+
+form input::placeholder {
+  color: #333;
+  font-size: 10px;
+}
+
+form input:focus {
+  outline: 0;
+  border-bottom: 1px solid rgba(128, 155, 206, 0.7);
+  transition: 0.6s all ease;
+}
+
+.button {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  z-index: 3;
+  background: #129D72;
+  font-family: "Source Sans Pro", sans-serif;
+  cursor: pointer;
+}
+
+.button:hover{
+    background: #129d7170;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {  
+    .popup-container {
+        transform: scale(0.5);
+    }
+} 
