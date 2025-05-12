@@ -4,16 +4,16 @@
 $dbhost 		= "localhost"; 
 
 // Usuario user
-$dbusername 	= "forocsihabbo_for";		 
+$dbusername 	= "dbusername";		 
 
 // Contraseña , password	
-$dbuserpass 	= "makeciagreat"; 	
+$dbuserpass 	= "dbuserpass"; 	
 
 // Nombre de base de datos db
-$dbname 		= "forocsihabbo_for"; 
+$dbname 		= "database_name"; 
 
 // Codigo de contador de usuarios
-$contador = 'rg0uvc6goful';
+$contador = 'counter';
 
 $language = 'es'; // es -> español | en -> english | br -> Portugues
 
